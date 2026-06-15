@@ -3,63 +3,85 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PickleCounter — Privacy Policy</title>
+<title>PickleCounter — Pickleball Scoreboard</title>
+<meta name="description" content="PickleCounter is a fast, no nonsense pickleball scoreboard for singles and doubles. Tracks serves, server numbers, side outs, and points. No ads, no account, works offline." />
 <style>
   :root {
     --bg: #05060c; --panel: #191333; --line: #2e2550;
-    --text: #f3eefc; --muted: #9d8ec4; --green: #a6e22e; --cyan: #6fd2e6;
+    --text: #f3eefc; --muted: #9d8ec4; --green: #a6e22e; --cyan: #6fd2e6; --yellow: #f4d35e;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0; background: var(--bg); color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.65;
+    line-height: 1.6;
+    background-image: radial-gradient(circle at 50% 0%, rgba(166,226,46,0.10), transparent 55%);
   }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
-  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
-  header h1 { font-size: 28px; margin: 0; }
-  header h1 .g { color: var(--green); }
-  .dot { color: var(--green); }
-  .updated { color: var(--muted); font-size: 14px; margin: 0 0 36px; }
-  h2 { color: var(--green); font-size: 20px; margin: 34px 0 8px; }
-  a { color: var(--cyan); }
-  .card {
-    background: var(--panel); border: 1px solid var(--line);
-    border-radius: 16px; padding: 22px 26px; margin-top: 14px;
-  }
-  footer { color: var(--muted); font-size: 13px; margin-top: 48px; text-align: center; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+  header { text-align: center; padding: 72px 24px 40px; }
+  header img.logo { width: 132px; height: 132px; border-radius: 30px; box-shadow: 0 10px 40px rgba(166,226,46,0.18); }
+  h1 { font-size: 44px; margin: 22px 0 6px; letter-spacing: 0.5px; }
+  h1 .g { color: var(--green); }
+  .tag { color: var(--muted); font-size: 19px; margin: 0 auto; max-width: 560px; }
+  .cta { display: inline-block; margin-top: 26px; background: var(--green); color: #06240f;
+         font-weight: 700; text-decoration: none; padding: 14px 28px; border-radius: 14px; }
+  .cta.soon { background: var(--panel); color: var(--muted); border: 1px solid var(--line); }
+
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; padding: 28px 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; }
+  .card h3 { margin: 0 0 6px; font-size: 17px; }
+  .card.green h3 { color: var(--green); }
+  .card.cyan h3 { color: var(--cyan); }
+  .card.yellow h3 { color: var(--yellow); }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+
+  .shots { display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; padding: 24px 0 12px; }
+  .shots img { width: 240px; border-radius: 22px; border: 1px solid var(--line); }
+
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 40px 24px 64px; }
+  footer a { color: var(--cyan); text-decoration: none; margin: 0 10px; }
 </style>
 </head>
 <body>
+  <header>
+    <img class="logo" src="./img/icon.png" alt="PickleCounter app icon" />
+    <h1>Pickle<span class="g">Counter</span></h1>
+    <p class="tag">The fast, no nonsense pickleball scoreboard. Tap to score, and always know who serves.</p>
+    <br />
+    <a class="cta soon" href="#">Coming soon to the App Store</a>
+  </header>
+
   <div class="wrap">
-    <header>
-      <h1>Pickle<span class="g">Counter</span> <span class="dot">·</span> Privacy Policy</h1>
-    </header>
-    <p class="updated">Effective date: June 12, 2026</p>
-
-    <p>PickleCounter is a pickleball scoring app. We respect your privacy and built the app to need none of your data.</p>
-
-    <h2>Information we collect</h2>
-    <p>PickleCounter does not collect, store, or share any personal information. The app does not require an account, does not connect to the internet, and does not include analytics or advertising.</p>
-
-    <h2>Data storage</h2>
-    <p>Any game information you enter, such as scores, player names, and settings, stays only on your device inside the app. It is never transmitted anywhere. Deleting the app removes this information.</p>
-
-    <h2>Children's privacy</h2>
-    <p>The app does not knowingly collect any data from anyone, including children.</p>
-
-    <h2>Third party services</h2>
-    <p>PickleCounter does not use third party analytics, tracking, or advertising services.</p>
-
-    <h2>Changes to this policy</h2>
-    <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
-
-    <h2>Contact</h2>
-    <div class="card">
-      Questions about this policy can be sent to <a href="mailto:necabunilas@gmail.com">necabunilas@gmail.com</a>.
+    <div class="features">
+      <div class="card green">
+        <h3>Know who serves</h3>
+        <p>The full score call, the server number, and which side the serve comes from, all at a glance.</p>
+      </div>
+      <div class="card cyan">
+        <h3>Singles and doubles</h3>
+        <p>Correct serve rotation and side outs for both, including the opening server rule in doubles.</p>
+      </div>
+      <div class="card yellow">
+        <h3>Made your way</h3>
+        <p>Set any game target, toggle win by two, add player names, and undo any mistake with one tap.</p>
+      </div>
+      <div class="card green">
+        <h3>Private by design</h3>
+        <p>No ads. No account. No internet required. Your scores never leave your phone.</p>
+      </div>
     </div>
 
-    <footer>© 2026 PickleCounter</footer>
+    <div class="shots">
+      <img src="./img/shot1.png" alt="Doubles scoring screen" />
+      <img src="./img/shot2.png" alt="Singles scoring screen" />
+      <img src="./img/shot3.png" alt="Winner screen" />
+    </div>
   </div>
+
+  <footer>
+    <a href="./privacy.html">Privacy Policy</a> ·
+    <a href="./support.html">Support</a>
+    <p>© 2026 PickleCounter</p>
+  </footer>
 </body>
 </html>
